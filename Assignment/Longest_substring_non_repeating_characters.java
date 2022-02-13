@@ -31,7 +31,7 @@ public class Longest_substring_non_repeating_characters {
 			
 			// ansn
 			ans= Math.max(ei-si+1, ans);
-			ei++;
+			//ei++;
 		}
 		return ans;
 	}
