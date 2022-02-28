@@ -5,6 +5,8 @@ public class Matrix_Search {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 				int[][] arr = { { 3, 30, 38 }, { 2, 52, 54 }, { 7, 60, 69 } };
+				int item= 31;
+				System.out.println(Search(arr, item));
 
 			}
 

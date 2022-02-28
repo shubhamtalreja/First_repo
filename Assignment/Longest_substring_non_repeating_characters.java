@@ -14,7 +14,7 @@ public class Longest_substring_non_repeating_characters {
 	}
 	public static int count(String str) {
 		int [] freq= new int[256];
-		int ei=0; int dis=0;
+		int ei=0; 
 		int si=0;
 		int ans=0;
 		while(ei<str.length()) {

@@ -25,7 +25,6 @@ public class All_Occ {
 	}
 
 //	public static int[] Allocc_arr(int[] arr, int item, int i, int count) {
-//
 //		if (i == arr.length) {
 //			int[] ans = new int[count];
 //			return ans;
