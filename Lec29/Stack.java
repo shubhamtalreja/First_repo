@@ -2,7 +2,7 @@ package Lec29;
 
 public class Stack {
 
-	 protected int[] arr;
+	protected int[] arr;
 	private int tos = -1;
 
 	public Stack() {
