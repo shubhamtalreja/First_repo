@@ -4,7 +4,7 @@ public class Selection_sort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int []arr = {4,19,6,7,9};
+		int []arr = {6,2,8,4,10};
 		Sort(arr); 
 	}
 	public static void Sort(int[] arr) {
