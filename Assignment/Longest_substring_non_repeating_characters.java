@@ -18,7 +18,7 @@ public class Longest_substring_non_repeating_characters {
 		int si=0;
 		int ans=0;
 		while(ei<str.length()) {
-			// window 
+			// window Z
 			freq[str.charAt(ei)]++;
 			
 			

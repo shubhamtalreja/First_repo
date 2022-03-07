@@ -13,7 +13,7 @@ public class Prime_Sieve {
 		prime[0] = true;// not prime
 		prime[1] = true;// not prime
 		for (int i = 2; i * i < prime.length; i++) {
-			if (prime[i] == false) {
+			if (prime[i] == false) { 
 				for (int mul = 2; i * mul < prime.length; mul++) {
 					prime[i * mul] = true;
 				}

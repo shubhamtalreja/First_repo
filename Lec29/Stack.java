@@ -3,7 +3,7 @@ package Lec29;
 public class Stack {
 
 	protected int[] arr;
-	private int tos = -1;
+	private int peek = -1;
 
 	public Stack() {
 		arr = new int[5];
@@ -15,46 +15,46 @@ public class Stack {
 	}
 
 	public boolean ISempty() {
-		return tos == -1;
+		return peek == -1;
 	}
 
 	public void push(int item) throws Exception {
 		if (isfull() == true) {
 			throw new Exception("pgl hai ho  jb tumhe pata stack full hai , element push kyu kr  raha hai ");
 		}
-		this.tos = this.tos + 1;
-		this.arr[this.tos] = item;
+		this.peek = this.peek + 1;
+		this.arr[this.peek] = item;
 	}
 
 	public boolean isfull() {
 
-		return this.tos == this.arr.length - 1;
+		return this.peek == this.arr.length - 1;
 	}
 
 	public int pop() throws Exception {
 		if (ISempty()) {
 			throw new Exception("Stack Empty hai bhai kya kr raha hai");
 		}
-		int item = arr[tos];
-		this.tos--;
+		int item = arr[peek];
+		this.peek--;
 		return item;
 	}
 
-	public int top() throws Exception {
+	public int peek() throws Exception {
 		if (ISempty()) {
 			throw new Exception("Stack Empty hai bhai kya kr raha hai");
 		}
-		int item = arr[tos];
+		int item = arr[peek];
 
 		return item;
 	}
 
 	public int size() {
-		return this.tos + 1;
+		return this.peek + 1;
 	}
 
 	public void Display() {
-		for (int i = 0; i <= tos; i++) {
+		for (int i = 0; i <= peek; i++) {
 			System.out.print(this.arr[i] + " ");
 
 		}
