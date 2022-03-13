@@ -23,6 +23,7 @@ public class Histogram {
 				int r = i;
 				if (st.isEmpty()) {
 					ans = Math.max(ans, ht * r);
+
 				} else {
 					int l = st.peek();
 					ans = Math.max(ans, ht * (r - l - 1));
