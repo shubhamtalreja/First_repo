@@ -44,7 +44,7 @@ public class Flyod_Cycle_Detacion {
 
 	public void CreateCycle() {
 		this.tail.next = this.head;
-	}
+	} 
 	
 	public boolean Cycle_Detacion() {
 		Node slow=this.head;

@@ -1,12 +1,8 @@
 package Assignment;
-
-import java.util.*;
-
-import Assignment.Main.LinkedList.Node;
-
-public class Main {
+import java.util.*;;
+public class Merge_Sorted_Linked_Lists {
 	public static class LinkedList {
-		public class Node {
+		private class Node {
 			int data;
 			Node next;
 
@@ -209,50 +205,13 @@ public class Main {
 				node = node.next;
 			}
 
-			// System.out.println("END");
+			//System.out.println("END");
 		}
-	}
-
+		}
 	public static void main(String[] args) throws Exception {
-
-		Scanner scn = new Scanner(System.in);
-		LinkedList list = new LinkedList();
-		LinkedList list2 = new LinkedList();
-
-		int t = scn.nextInt();
-		while (t > 0) {
-			int n = scn.nextInt();
-
-			while (n > 0) {
-				int item = scn.nextInt();
-				list.addLast(item);
-				n--;
-			}
-			int m = scn.nextInt();
-
-			while (m > 0) {
-				int item2 = scn.nextInt();
-				list2.addLast(item2);
-				m--;
-
-			}
-			t--;
-			LinkedList ans = mergelist(list.head, list2.head);
-			ans.display();
-		}
-
+			
+			Scanner scn = new Scanner(System.in);
+			LinkedList list = new LinkedList();
+	        
 	}
-
-	public static LinkedList mergelist(LinkedList.Node list, LinkedList.Node list2) {
-		
-		LinkedList ans = temp;
-		while (list != null && list2 != null) {
-			if (list.data > list2.data) {
-				temp.next= list;
-                temp = temp.next;
-                list= list.next;
-			}
-		}
-
 	}
-}
