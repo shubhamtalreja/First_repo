@@ -3,7 +3,7 @@ import java.util.Stack;
 public class NGE {
 
 	public static void main(String[] args) {
-		int[] arr = { 15, 11, 9, 13, 21, 3 };
+		int[] arr = { 11, 9 ,13, 21 ,3 };
 		nextGreterELE(arr);
 
 	}

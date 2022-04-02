@@ -14,6 +14,7 @@ public class Queue_using_stacks {
 		Primary.push(item);
 		while(!helper.ISempty()) {
 			Primary.push(helper.pop());
+			
 		}
 	
 		

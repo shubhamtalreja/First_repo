@@ -8,7 +8,7 @@ public class Binary_Tree_Client {
 		bt.dispaly();
 		System.out.println(bt.find(90));
 		System.out.println(bt.min());
-		bt.size();
+		System.out.println(bt.size());
 		bt.PreOrder();
 		bt.InOrder();
 		bt.PostOrder();
