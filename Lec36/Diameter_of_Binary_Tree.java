@@ -9,7 +9,7 @@ public class Diameter_of_Binary_Tree {
 		TreeNode() {
 		}
 
-		TreeNode(int val) {
+		TreeNode(int val) { 
 			this.val = val;
 		}
 
@@ -34,7 +34,6 @@ public class Diameter_of_Binary_Tree {
 		}
 
 		private int ht(TreeNode node) {
-			// TODO Auto-generated method stub
 			if (node == null) {
 				return -1;
 			}
