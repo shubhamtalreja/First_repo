@@ -4,7 +4,7 @@ public class Tricky_Permuation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		print_permuataion("112", "");
+		print_permuataion("AAB", "");
 
 	}
 	public static void print_permuataion(String ques, String ans) {// abcde

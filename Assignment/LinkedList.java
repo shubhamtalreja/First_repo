@@ -1,30 +1,27 @@
 package Assignment;
-
 import java.util.*;
-
-public class Main{
+	public class LinkedList {
 		public class Node {
 			int data;
 			Node next;
 
-			public Node(int data, Node next) {
+			Node(int data, Node next) {
 				this.data = data;
 				this.next = next;
 			}
-			
 		}
 
 		private Node head;
 		private Node tail;
 		private int size;
 
-		public Main() {
+		public LinkedList() {
 			this.head = null;
 			this.tail = null;
 			this.size = 0;
 		}
 
-		public Main(Node head, Node tail, int size) {
+		public LinkedList(Node head, Node tail, int size) {
 			this.head = head;
 			this.tail = tail;
 			this.size = size;
@@ -209,71 +206,27 @@ public class Main{
 
 			// System.out.println("END");
 		}
-	
 
-	public static void main(String[] args) throws Exception {
-
-		Scanner scn = new Scanner(System.in);
-		
-		int t = scn.nextInt();
-		while (t > 0) {
-			Main list = new Main();
-			Main list2 = new Main();
-
-			int n = scn.nextInt();
-
-			while (n > 0) {
-				int item = scn.nextInt();
-				list.addLast(item);
-				n--;
+		public void deleteLarger() throws Exception {
+			if(head.data < head.next.data){
+				head.data= head.next.data;
+				head.next= head.next.next;
 			}
-			int m = scn.nextInt();
 
-			while (m > 0) {
-				int item2 = scn.nextInt();
-				list2.addLast(item2);
-				m--;
 
-			}
-			Main ans= mergelist(list.head, list2.head);
-			ans.display();
-			System.out.println();
-			t--;
-			
 		}
 
+		public static void main(String[] args) throws Exception {
+
+			Scanner scn = new Scanner(System.in);
+			int N = scn.nextInt();
+
+			LinkedList list = new LinkedList();
+
+			for (int i = 0; i < N; i++) {
+				list.addLast(scn.nextInt());
+			}
+
+			list.deleteLarger();
+		}
 	}
-
-	public static Main mergelist(Main.Node list, Main.Node list2) {
-		Main mm = new  Main();
-		Node nn = mm.new Node(0,null);
-		Node temp=nn;
-		while(list!=null && list2!=null) {
-			if(list.data>list2.data) {
-				nn.next=list2;
-				nn=nn.next;
-				list2=list2.next;
-			}
-			else {
-				nn.next=list;
-				nn=nn.next;
-				list=list.next;
-
-			}
-		}
-		if(list==null) {
-			nn.next=list2;
-		}
-		
-		if(list2==null) {
-			nn.next=list;
-		}
-		Main ans = new Main();
-	 ans.head=temp.next;
-	 return ans;
-		
-
-		
-	
-}
-}
