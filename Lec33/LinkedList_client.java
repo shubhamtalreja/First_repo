@@ -11,7 +11,7 @@ public class LinkedList_client {
 		ll.addlast(6);
 		ll.addlast(5);
 		// ll.Display();
-		ll.Addatindex(2, 90);
+//		ll.Addatindex(2, 90);
 		ll.Display();
 ////		System.out.println(ll.getfirst());
 ////		System.out.println(ll.getLast());
