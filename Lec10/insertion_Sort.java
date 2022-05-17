@@ -16,7 +16,7 @@ public class insertion_Sort {
 
 	}
 	}
-public static void Sort(int [] arr) {
+        public static void Sort(int [] arr) {
 		
 		for (int counter = 1; counter < arr.length; counter++) {
 			int j=counter-1;

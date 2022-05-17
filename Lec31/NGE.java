@@ -3,12 +3,12 @@ import java.util.Stack;
 public class NGE {
 
 	public static void main(String[] args) {
-		int[] arr = { 11, 9 ,13, 21 ,3 };
+		int[] arr = { 11 ,13 ,21, 3 };
 		nextGreterELE(arr);
 
 	}
 
-	public static void nextGreterELE(int[] arr) {
+	public static void nextGreterELE(int[ ] arr) {
 		int[] ans = new int[arr.length];
 		Stack<Integer> st = new Stack<>();
 		for (int i = 0; i < arr.length; i++) {
@@ -26,7 +26,7 @@ public class NGE {
 		}
 
 		for (int i = 0; i < ans.length; i++) {
-			System.out.print(ans[i] + " ");
+			System.out.println(arr[i] + "," + ans[i] );
 		}
 
 	}

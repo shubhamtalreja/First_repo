@@ -13,6 +13,7 @@ public class Reverse_string {
 
 		if (str == null || str.length() == 0) 
 		{
+			
 			return str;
 		}
 

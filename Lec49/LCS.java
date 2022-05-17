@@ -1,9 +1,9 @@
-package Lec44;
+package Lec49;
 
-public class Trie_Client {
+public class LCS {
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Trie t = new Trie();
 
 	}
 

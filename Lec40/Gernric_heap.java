@@ -60,7 +60,7 @@ public class Gernric_heap <T> {
 		System.out.println(list);
 	}
 
-//	public int islarger(T t1, T t2) {
-//		return t1.compareTo(t2);
-//	}
+	public int islarger(T t1, T t2) {
+		return (t1).compareTo(t2);
+	}
 }
