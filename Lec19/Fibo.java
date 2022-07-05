@@ -4,7 +4,7 @@ public class Fibo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n=3;
+		int n=4;
 		System.out.println(fib(n));
 		
 

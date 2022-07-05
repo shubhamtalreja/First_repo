@@ -11,7 +11,8 @@ public class Power {
 
 	}
 
-	public static int pow(int X, int N) {
+	public static int pow(int X, int N)  {
+		
 		if (N == 1) {
 			return X;
 		}

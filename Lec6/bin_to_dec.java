@@ -15,7 +15,7 @@ public class bin_to_dec {
 			int rem = n%10;
 			ans =ans +rem*mul;
 			n/=10;
-			mul=mul*2;
+			mul=mul*2;//mul*src
 			
 		}
 		System.out.println(ans);

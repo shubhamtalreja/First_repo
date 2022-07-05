@@ -19,6 +19,7 @@ public class insertion_Sort {
         public static void Sort(int [] arr) {
 		
 		for (int counter = 1; counter < arr.length; counter++) {
+			
 			int j=counter-1;
 			int item=arr[counter];
 			while(j>=0 && arr[j]>item) {
