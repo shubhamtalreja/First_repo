@@ -7,13 +7,14 @@ public class reversealter {
 		String word ="";
 		String ans="";
 		for(int i=str.length()-1;i>=0;i--) {
-			if(str.charAt(i)=='.') {
+			if(str.charAt(i)=='.' ) {
 				ans ='.'+ word +ans;
 				word="";
 			}
 			else {
 				word +=str.charAt(i);
-//				System.out.println(ans);
+				
+//		System.out.println(ans);
 
 			}
 		}

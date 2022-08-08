@@ -4,7 +4,10 @@ public class countfreq {
 
 	public static void main(String[] args) {
 		
-		int n=21;
+		int n=20;
+		System.out.println(fibo(n));
+	}
+	public static int fibo(int n) {
 		int a=0;
 		int b=1;
 		int sum =0;
@@ -14,7 +17,7 @@ public class countfreq {
 			a=b;
 			b=c;
 			if(a==n) {
-				System.out.println(n);
+				return n;
 			}
 			if(a>n) {
 				break;
@@ -25,8 +28,9 @@ public class countfreq {
 			}
 			
 		}
-		System.out.println(sum);
+		return sum;
+		
+	}
 		
 	}
 
-}

@@ -18,13 +18,13 @@ public class Revision {
 
 		while(j<str.length() && str.charAt(j)!='.') {
 			sb2.append(str.charAt(j));
-			System.out.println(sb2);
+//			System.out.println(sb2);
 
 			j++;
 		}
 		if(sb2.length()!=0) {
 			sb.insert(0,sb2 +".");
-			System.out.println(sb2);
+//			System.out.println(sb2);
 
 		}
 		i=j+1;
